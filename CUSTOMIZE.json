@@ -1,0 +1,19 @@
+{
+    "files": {
+        "README.md": "Information about the project and how to customize it",
+        "package.json": "Dependencies and scripts",
+        "tailwind.config.ts": "Theme colors, custom animations, and styling",
+        "data/profile.ts": "Your name, title, bio, and SEO settings",
+        "data/skills.ts": "Your technical skills by category",
+        "data/experience.ts": "Your work experience timeline",
+        "data/projects.ts": "Your portfolio projects",
+        "data/socials.ts": "Your social media links"
+    },
+    "images": {
+        "public/images/avatar-placeholder.jpg": "Your profile photo",
+        "public/images/og-image.jpg": "Social sharing image (1200x630)",
+        "public/images/projects/": "Project thumbnail images",
+        "public/favicon.ico": "Site favicon",
+        "public/resume.pdf": "Your downloadable CV/resume"
+    }
+}

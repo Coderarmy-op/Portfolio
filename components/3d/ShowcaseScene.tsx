@@ -138,7 +138,7 @@ function OrbitingSpheres() {
             id: i,
             angle: (i / 8) * Math.PI * 2,
             radius: 3,
-            speed: 0.3 + Math.random() * 0.2,
+            yOffset: (i % 2 === 0 ? 0.3 : -0.3),
             size: 0.1 + Math.random() * 0.15,
             color: ["#6366f1", "#8b5cf6", "#22d3ee", "#ec4899"][i % 4],
         }));
@@ -157,7 +157,7 @@ function OrbitingSpheres() {
                     key={sphere.id}
                     position={[
                         Math.cos(sphere.angle) * sphere.radius,
-                        Math.sin(state => state.clock.elapsedTime * sphere.speed) * 0.5,
+                        sphere.yOffset,
                         Math.sin(sphere.angle) * sphere.radius,
                     ]}
                 >
@@ -172,6 +172,7 @@ function OrbitingSpheres() {
         </group>
     );
 }
+
 
 // Animated wireframe dodecahedron
 function WireframeDodecahedron() {
